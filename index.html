@@ -3,25 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="CoachingOS — AI-powered prompt tools for coaches and consultants. No API keys, no subscriptions. Open in browser, paste into Claude or ChatGPT, get professional results instantly.">
-<meta name="keywords" content="coaching tools, AI prompts, consultant toolkit, ChatGPT prompts, Claude prompts, coach business tools">
-<meta property="og:title" content="NestworkCo — AI Tools for Independent Professionals">
-<meta property="og:description" content="CoachingOS: HTML prompt tools for coaches & consultants. Buy once, use forever. No subscriptions.">
+<meta name="description" content="NestworkCo — Advanced Operating Systems & Interactive Frameworks for Modern Professionals. Private, secure, subscription-free toolkits.">
+<meta name="keywords" content="professional os, sales frameworks, B2B toolkits, private AI prompts, local workflow tools">
+<meta property="og:title" content="NestworkCo — High-Performance Workflow Architectures">
+<meta property="og:description" content="Subscription-free HTML prompt engines and Notion workspaces for elite professionals. Buy once, own forever.">
 <meta property="og:url" content="https://nestworkco.github.io/nestworkco">
 <meta property="og:type" content="website">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="NestworkCo — CoachingOS">
-<meta name="twitter:description" content="AI prompt tools for coaches & consultants. No API keys needed.">
-<title>NestworkCo — AI Tools for Independent Professionals</title>
+<title>NestworkCo — High-Performance Workflow Architectures</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:ital,wght@0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
-  background-color:#faf9fc;
-  color:#1a1628;
-  font-family:'Outfit',sans-serif;
+  background-color:#fafafd;
+  color:#110f1a;
+  font-family:'Inter',sans-serif;
   font-weight:400;
   line-height:1.65;
   overflow-x:hidden;
@@ -29,171 +27,160 @@ body{
 }
 
 :root{
-  --bg:#faf9fc;
-  --s1:#f2f0f8;
-  --s2:#eceaf4;
-  --bd:rgba(26,22,40,0.1);
-  --t1:#1a1628;
-  --t2:#3d3560;
-  --t3:#7a72a0;
-  --p:#c02878;
-  --v:#6a10c0;
-  --b:#2a58d8;
-  --c:#0898d0;
-  --g:linear-gradient(90deg,#c02878,#6a10c0,#2a58d8);
+  --bg:#fafafd;
+  --s1:#f3f2f8;
+  --s2:#eae8f2;
+  --bd:rgba(17,15,26,0.08);
+  --t1:#110f1a;
+  --t2:#353146;
+  --t3:#686380;
+  --p:#5b21b6;
+  --v:#7c3aed;
+  --b:#2563eb;
+  --g:linear-gradient(135deg,#7c3aed,#2563eb,#06b6d4);
 }
 
-h1,h2{font-family:'Cormorant Garamond',serif;font-weight:700;line-height:1.08;letter-spacing:-0.01em;color:#1a1628}
-h3{font-family:'Outfit',sans-serif;font-weight:600;color:#1a1628;font-size:0.92rem}
-p{color:#3d3560;font-size:0.9rem;line-height:1.75}
+h1,h2{font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;line-height:1.15;letter-spacing:-0.02em;color:#110f1a}
+h3{font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;color:#110f1a;font-size:0.95rem;letter-spacing:-0.01em}
+p{color:#353146;font-size:0.92rem;line-height:1.75}
 a{text-decoration:none}
-.gi{font-style:italic;background:var(--g);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.gi{font-style:normal;background:var(--g);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 
 /* NAV */
 nav{
   position:fixed;top:0;left:0;right:0;z-index:999;
-  height:58px;
+  height:64px;
   display:flex;align-items:center;justify-content:space-between;
-  padding:0 1.25rem;
-  background-color:rgba(250,249,252,0.95);
-  backdrop-filter:blur(20px);
-  border-bottom:1px solid rgba(26,22,40,0.06);
-  box-shadow:0 1px 0 rgba(192,40,120,0.08);
+  padding:0 1.5rem;
+  background-color:rgba(250,249,253,0.85);
+  backdrop-filter:blur(24px);
+  border-bottom:1px solid rgba(17,15,26,0.05);
 }
-.logo{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-style:italic;font-weight:700;background:var(--g);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.nav-btn{background:var(--g);color:#fff;font-size:0.8rem;font-weight:500;padding:0.48rem 1.1rem;border-radius:100px}
+.logo{font-family:'Plus Jakarta Sans',sans-serif;font-size:1.15rem;font-weight:700;letter-spacing:-0.03em;color:#110f1a}
+.logo span{color:#7c3aed}
+.nav-btn{background:#110f1a;color:#fff;font-size:0.8rem;font-weight:500;padding:0.55rem 1.2rem;border-radius:6px;transition:background 0.2s}
+.nav-btn:hover{background:#2a253b}
 
 /* HERO */
 .hero{
-  background-color:#faf9fc;
-  min-height:100svh;
+  min-height:90svh;
   display:flex;flex-direction:column;
   align-items:center;justify-content:center;
   text-align:center;
-  padding:6rem 1.25rem 4rem;
+  padding:8rem 1.5rem 5rem;
   position:relative;overflow:hidden;
 }
 .hero-glow{
-  position:absolute;top:30%;left:50%;
+  position:absolute;top:40%;left:50%;
   transform:translate(-50%,-50%);
-  width:600px;height:600px;border-radius:50%;
-  background:radial-gradient(circle,rgba(106,16,192,0.06) 0%,transparent 65%);
+  width:800px;height:800px;border-radius:50%;
+  background:radial-gradient(circle,rgba(124,58,237,0.05) 0%,transparent 70%);
   pointer-events:none;
 }
 .badge{
   display:inline-block;
-  font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;
-  color:#0898d0;border:1px solid rgba(8,152,208,0.35);
-  padding:0.3rem 0.9rem;border-radius:100px;margin-bottom:1.75rem;
-  background:linear-gradient(90deg,rgba(192,40,120,0.05),rgba(8,152,208,0.05));
+  font-size:0.72rem;font-weight:500;letter-spacing:0.04em;
+  color:#7c3aed;border:1px solid rgba(124,58,237,0.2);
+  padding:0.35rem 1rem;border-radius:100px;margin-bottom:2rem;
+  background:rgba(124,58,237,0.03);
 }
-.hero h1{font-size:clamp(2.6rem,8vw,5rem);color:#1a1628;margin-bottom:1.1rem}
-.hero p{font-size:0.95rem;max-width:440px;margin:0 auto 2.25rem;color:#3d3560}
-.btns{display:flex;flex-direction:column;gap:0.7rem;width:100%;align-items:center}
-.btn-p{background:var(--g);color:#fff;font-size:0.9rem;font-weight:500;padding:0.85rem 2rem;border-radius:100px;width:100%;max-width:280px;text-align:center}
-.btn-g{color:#3d3560;font-size:0.85rem;padding:0.8rem 2rem;border-radius:100px;border:1px solid rgba(26,22,40,0.15);width:100%;max-width:280px;text-align:center}
+.hero h1{font-size:clamp(2.5rem,7vw,4.5rem);margin-bottom:1.5rem}
+.hero p{font-size:1rem;max-width:540px;margin:0 auto 2.5rem;color:#353146}
+.btns{display:flex;flex-direction:column;gap:0.8rem;width:100%;align-items:center}
+.btn-p{background:#110f1a;color:#fff;font-size:0.88rem;font-weight:500;padding:0.9rem 2.2rem;border-radius:8px;width:100%;max-width:280px;text-align:center;transition:transform 0.2s}
+.btn-p:hover{transform:translateY(-1px)}
+.btn-g{color:#353146;font-size:0.88rem;font-weight:500;padding:0.9rem 2.2rem;border-radius:8px;border:1px solid rgba(17,15,26,0.12);width:100%;max-width:280px;text-align:center}
 
 /* STATS */
 .stats{
-  background-color:#f2f0f8;
+  background-color:#f3f2f8;
   display:grid;grid-template-columns:repeat(4,1fr);
-  border-top:1px solid rgba(26,22,40,0.08);
-  border-bottom:1px solid rgba(26,22,40,0.08);
+  border-top:1px solid var(--bd);
+  border-bottom:1px solid var(--bd);
 }
-.stat{padding:1.25rem 0.5rem;text-align:center;border-right:1px solid rgba(26,22,40,0.08)}
+.stat{padding:1.5rem 0.5rem;text-align:center;border-right:1px solid var(--bd)}
 .stat:last-child{border-right:none}
-.stat-n{font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-style:italic;font-weight:700;background:var(--g);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.stat-l{font-size:0.58rem;color:#7a72a0;text-transform:uppercase;letter-spacing:0.08em;margin-top:0.15rem;line-height:1.4}
+.stat-n{font-family:'Plus Jakarta Sans',sans-serif;font-size:1.5rem;font-weight:700;color:#110f1a}
+.stat-l{font-size:0.65rem;color:#686380;text-transform:uppercase;letter-spacing:0.06em;margin-top:0.25rem;line-height:1.4;font-weight:500}
 
 /* SECTIONS */
-.sec{background-color:#faf9fc;padding:4rem 1.25rem}
-.sec-alt{background-color:#f2f0f8;padding:4rem 1.25rem}
-.sec-tag{font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;background:var(--g);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:0.6rem;font-weight:600}
-.sec h2,.sec-alt h2{font-size:clamp(1.7rem,4.5vw,2.6rem);color:#1a1628;margin-bottom:0.85rem}
-.sec > p,.sec-alt > p{max-width:500px;margin-bottom:2.25rem;color:#3d3560}
+.sec{background-color:#fafafd;padding:5rem 1.5rem}
+.sec-alt{background-color:#f3f2f8;padding:5rem 1.5rem}
+.sec-tag{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:#7c3aed;margin-bottom:0.7rem;font-weight:600}
+.sec h2,.sec-alt h2{font-size:clamp(1.8rem,4.5vw,2.5rem);margin-bottom:1rem}
+.sec > p,.sec-alt > p{max-width:540px;margin-bottom:3rem;color:#524d66;font-size:0.95rem}
 
 /* PROBLEM / SOLUTION */
-.ps-wrap{display:grid;gap:0.9rem}
-.ps{background-color:#fff;border:1px solid rgba(26,22,40,0.1);border-radius:14px;padding:1.3rem;border-left:3px solid transparent;border-image:var(--g) 1}
-.ps h3{color:#1a1628;margin-bottom:0.85rem;display:flex;align-items:center;gap:0.5rem;font-size:0.9rem}
-.ps ul{list-style:none;display:flex;flex-direction:column;gap:0.5rem}
-.ps ul li{font-size:0.84rem;color:#3d3560;display:flex;gap:0.55rem;line-height:1.55;align-items:flex-start}
-.ps ul li .ic{flex-shrink:0;font-size:0.72rem;margin-top:0.18rem;font-weight:600}
-.ps ul li .ic.x{color:#c02878}
-.ps ul li .ic.ok{color:#18a060}
+.ps-wrap{display:grid;gap:1.2rem}
+.ps{background-color:#fff;border:1px solid rgba(17,15,26,0.06);border-radius:12px;padding:1.75rem;box-shadow:0 2px 8px rgba(17,15,26,0.02)}
+.ps h3{color:#110f1a;margin-bottom:1.2rem;display:flex;align-items:center;gap:0.5rem}
+.ps ul{list-style:none;display:flex;flex-direction:column;gap:0.75rem}
+.ps ul li{font-size:0.88rem;color:#353146;display:flex;gap:0.6rem;line-height:1.6;align-items:flex-start}
+.ps ul li .ic{flex-shrink:0;font-size:0.75rem;margin-top:0.2rem;font-weight:600}
+.ps ul li .ic.x{color:#ef4444}
+.ps ul li .ic.ok{color:#10b981}
 
 /* PRODUCTS */
-.prod-grid{display:flex;flex-direction:column;gap:0.9rem}
-.prod{background-color:#fff;border:1px solid rgba(26,22,40,0.08);border-radius:14px;padding:1.3rem;position:relative;overflow:hidden;transition:box-shadow 0.25s,transform 0.25s}
-.prod:hover{box-shadow:0 8px 32px rgba(106,16,192,0.08);transform:translateY(-2px)}
-.prod::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--acc,var(--g))}
-.prod-vol{font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:#7a72a0;margin-bottom:0.45rem}
-.prod h3{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-style:italic;font-weight:700;color:#1a1628;margin-bottom:0.45rem}
-.prod p{font-size:0.83rem;margin-bottom:1rem;color:#3d3560}
-.mod-row{display:flex;flex-wrap:wrap;gap:0.35rem;margin-bottom:1.1rem}
-.mod{font-size:0.64rem;padding:0.15rem 0.55rem;border-radius:100px;background:rgba(26,22,40,0.04);border:1px solid rgba(26,22,40,0.1);color:#7a72a0}
-.pf{display:flex;justify-content:space-between;align-items:center}
-.pamt{font-family:'Cormorant Garamond',serif;font-size:1.85rem;font-style:italic;font-weight:700}
-.pbtn{font-size:0.75rem;font-weight:500;padding:0.42rem 0.95rem;border-radius:100px;color:#fff}
-.bundle{background:linear-gradient(#fdf8ff,#fdf8ff) padding-box,var(--g) border-box;border:1.5px solid transparent;}
+.prod-grid{display:flex;flex-direction:column;gap:1.2rem}
+.prod{background-color:#fff;border:1px solid rgba(17,15,26,0.06);border-radius:12px;padding:1.75rem;position:relative;overflow:hidden;transition:box-shadow 0.25s,transform 0.25s;box-shadow:0 2px 12px rgba(17,15,26,0.02)}
+.prod:hover{box-shadow:0 12px 30px rgba(27,22,48,0.05);transform:translateY(-2px)}
+.prod::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--acc,var(--g))}
+.prod-vol{font-size:0.65rem;letter-spacing:0.06em;text-transform:uppercase;color:#686380;margin-bottom:0.6rem;font-weight:500}
+.prod h3{font-size:1.25rem;font-weight:700;color:#110f1a;margin-bottom:0.6rem}
+.prod p{font-size:0.88rem;margin-bottom:1.25rem;color:#524d66}
+.mod-row{display:flex;flex-wrap:wrap;gap:0.4rem;margin-bottom:1.5rem}
+.mod{font-size:0.68rem;font-weight:500;padding:0.2rem 0.65rem;border-radius:4px;background:#f3f2f8;border:1px solid rgba(17,15,26,0.04);color:#524d66}
+.pf{display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(17,15,26,0.05);padding-top:1.25rem}
+.pamt{font-size:0.85rem;font-weight:600;color:#110f1a}
+.pbtn{font-size:0.8rem;font-weight:600;padding:0.5rem 1.1rem;border-radius:6px;background:#110f1a;color:#fff;transition:background 0.2s}
+.pbtn:hover{background:#2a253b}
+.bundle{background:linear-gradient(#fff,#fff) padding-box,var(--g) border-box;border:2px solid transparent;}
 
 /* HOW */
-.steps{display:flex;flex-direction:column;gap:0.75rem}
-.step{background-color:#fff;border:1px solid rgba(26,22,40,0.08);border-radius:12px;padding:1.1rem;display:flex;gap:0.9rem;align-items:flex-start;transition:box-shadow 0.2s}
-.step:hover{box-shadow:0 4px 20px rgba(42,88,216,0.07)}
-.sn{width:36px;height:36px;border-radius:50%;background:var(--g);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:0.95rem;font-style:italic;font-weight:700;color:#fff;flex-shrink:0}
-.step h3{color:#1a1628;margin-bottom:0.2rem}
-.step p{font-size:0.8rem;color:#3d3560}
+.steps{display:flex;flex-direction:column;gap:1rem}
+.step{background-color:#fff;border:1px solid rgba(17,15,26,0.05);border-radius:12px;padding:1.5rem;display:flex;gap:1.2rem;align-items:flex-start}
+.sn{width:32px;height:32px;border-radius:6px;background:#110f1a;display:flex;align-items:center;justify-content:center;font-size:0.85rem;font-weight:700;color:#fff;flex-shrink:0}
+.step h3{color:#110f1a;margin-bottom:0.3rem}
+.step p{font-size:0.85rem;color:#524d66}
 
-/* AI BAR */
-.ai-bar{background-color:#eceaf4;padding:1.75rem 1.25rem;text-align:center;border-top:1px solid rgba(26,22,40,0.08);border-bottom:1px solid rgba(26,22,40,0.08)}
-.ai-lbl{font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:#7a72a0;margin-bottom:0.9rem;font-weight:500}
-.ai-row{display:flex;flex-wrap:wrap;justify-content:center;gap:0.5rem}
-.ap{padding:0.35rem 0.9rem;border:1px solid rgba(26,22,40,0.12);border-radius:100px;font-size:0.75rem;color:#3d3560;background:#fff}
-.ap.rec{border-color:rgba(192,40,120,0.35);color:#c02878;font-weight:500;background:rgba(192,40,120,0.04)}
+/* PRIVACY BAR */
+.ai-bar{background-color:#eae8f2;padding:2rem 1.5rem;text-align:center;border-top:1px solid var(--bd);border-bottom:1px solid var(--bd)}
+.ai-lbl{font-size:0.68rem;letter-spacing:0.08em;text-transform:uppercase;color:#353146;margin-bottom:1rem;font-weight:600}
+.ai-row{display:flex;flex-wrap:wrap;justify-content:center;gap:0.6rem}
+.ap{padding:0.4rem 1.1rem;border:1px solid rgba(17,15,26,0.08);border-radius:6px;font-size:0.8rem;color:#353146;background:#fff;font-weight:500}
+.ap.rec{background:#110f1a;color:#fff;border-color:#110f1a}
 
 /* TESTIMONIALS */
-.tg{display:flex;flex-direction:column;gap:0.85rem}
-.t{background-color:#fff;border:1px solid rgba(26,22,40,0.1);border-radius:14px;padding:1.2rem}
-.stars{color:#c8940a;font-size:0.75rem;letter-spacing:0.08em;margin-bottom:0.65rem}
-.tq{font-size:0.85rem;color:#1a1628;line-height:1.7;margin-bottom:0.9rem;padding-left:0.75rem;border-left:3px solid #c02878}
-.tw{display:flex;align-items:center;gap:0.65rem}
-.av{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.82rem;font-weight:600;color:#fff;flex-shrink:0}
-.tn{font-size:0.8rem;font-weight:600;color:#1a1628}
-.tr{font-size:0.68rem;color:#7a72a0}
+.tg{display:flex;flex-direction:column;gap:1rem}
+.t{background-color:#fff;border:1px solid rgba(17,15,26,0.05);border-radius:12px;padding:1.5rem;box-shadow:0 2px 8px rgba(17,15,26,0.01)}
+.stars{color:#f59e0b;font-size:0.8rem;margin-bottom:0.75rem}
+.tq{font-size:0.88rem;color:#110f1a;line-height:1.7;margin-bottom:1.2rem;padding-left:0.9rem;border-left:2px solid #7c3aed}
+.tw{display:flex;align-items:center;gap:0.75rem}
+.av{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.8rem;font-weight:600;color:#fff;flex-shrink:0}
+.tn{font-size:0.85rem;font-weight:600;color:#110f1a}
+.tr{font-size:0.72rem;color:#686380}
 
-/* INDUSTRIES */
-.ig{display:grid;grid-template-columns:1fr 1fr;gap:0.7rem}
-.ic{background-color:#fff;border:1px solid rgba(26,22,40,0.08);border-radius:12px;padding:1rem;transition:border-color 0.2s,box-shadow 0.2s}
-.ic:hover{border-color:rgba(192,40,120,0.2);box-shadow:0 4px 16px rgba(192,40,120,0.06)}
-.ic-i{font-size:1.2rem;margin-bottom:0.4rem}
-.ic h3{font-size:0.8rem;color:#1a1628;margin-bottom:0.25rem}
-.ic p{font-size:0.72rem;line-height:1.5;color:#3d3560}
-
-/* PRICING */
-.pg{display:grid;grid-template-columns:repeat(3,1fr);gap:0.55rem;margin-top:2rem;max-width:460px;margin-left:auto;margin-right:auto}
-.pc{background-color:#fff;border:1px solid rgba(26,22,40,0.1);border-radius:10px;padding:0.9rem 0.7rem;text-align:center}
-.pc.best{grid-column:span 3;background:linear-gradient(135deg,rgba(192,40,120,0.04),rgba(8,152,208,0.04));border-color:rgba(192,40,120,0.25)}
-.pv{font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:#7a72a0;margin-bottom:0.25rem}
-.pn{font-size:0.74rem;color:#3d3560;margin-bottom:0.45rem}
-.pa{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-style:italic;font-weight:700}
-.psave{font-size:0.62rem;color:#c8940a;margin-top:0.15rem;font-weight:500}
+/* VALUE EMBED */
+.value-block{max-width:600px;margin:3rem auto 0;background:#fff;border:1px solid var(--bd);border-radius:14px;padding:2rem;text-align:left}
+.v-row{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:1.5rem}
+.v-cell h4{font-size:0.88rem;font-weight:700;color:#110f1a;margin-bottom:0.25rem}
+.v-cell p{font-size:0.8rem;color:#686380}
 
 /* CTA */
-.cta{background:linear-gradient(135deg,#faf9fc,#f5f0fc,#f0f5fc);padding:5rem 1.25rem;text-align:center;position:relative;overflow:hidden}
-.cta::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 50% 50%,rgba(106,16,192,0.05),transparent);pointer-events:none}
-.cta h2{color:#1a1628;margin-bottom:0.85rem}
-.cta p{max-width:400px;margin:0 auto 2.25rem;color:#3d3560;font-size:0.88rem}
+.cta{background:linear-gradient(180deg,#fafafd,#f3f0fc,#eae4f7);padding:6rem 1.5rem;text-align:center}
+.cta h2{margin-bottom:1rem}
+.cta p{max-width:480px;margin:0 auto 2.5rem;color:#353146;font-size:0.95rem}
 
 /* FOOTER */
-footer{background:linear-gradient(135deg,#f2f0f8,#eef0f8);padding:2rem 1.25rem;border-top:1px solid rgba(26,22,40,0.08);display:flex;flex-direction:column;gap:1rem;align-items:center;text-align:center}
-.fl{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;font-weight:700;background:var(--g);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.flinks{display:flex;gap:1.5rem}
-.flinks a{color:#7a72a0;font-size:0.75rem}
-.fc{color:#7a72a0;font-size:0.68rem}
+footer{background:#110f1a;padding:2.5rem 1.5rem;display:flex;flex-direction:column;gap:1.2rem;align-items:center;text-align:center}
+.fl{font-family:'Plus Jakarta Sans',sans-serif;font-size:1.1rem;font-weight:700;color:#fff;letter-spacing:-0.02em}
+.flinks{display:flex;gap:2rem}
+.flinks a{color:#a5a1b8;font-size:0.8rem;transition:color 0.2s}
+.flinks a:hover{color:#fff}
+.fc{color:#686380;font-size:0.72rem}
 
 /* ANIMATE */
-.f{opacity:0;transform:translateY(16px);transition:opacity 0.5s ease,transform 0.5s ease}
+.f{opacity:0;transform:translateY(12px);transition:opacity 0.6s cubic-bezier(0.16,1,0.3,1),transform 0.6s cubic-bezier(0.16,1,0.3,1)}
 .f.in{opacity:1;transform:none}
 
 /* TABLET */
@@ -205,249 +192,227 @@ footer{background:linear-gradient(135deg,#f2f0f8,#eef0f8);padding:2rem 1.25rem;b
   .bundle{grid-column:span 2}
   .steps{display:grid;grid-template-columns:1fr 1fr}
   .tg{display:grid;grid-template-columns:1fr 1fr}
-  .ig{grid-template-columns:repeat(3,1fr)}
-  .pg{grid-template-columns:repeat(5,1fr);max-width:620px}
-  .pc.best{grid-column:span 5}
   footer{flex-direction:row;justify-content:space-between;text-align:left}
 }
 
 /* DESKTOP */
 @media(min-width:960px){
-  nav{padding:0 3rem}
-  .sec,.sec-alt,.ai-bar,.cta,footer{padding-left:4rem;padding-right:4rem}
+  nav{padding:0 4rem}
+  .sec,.sec-alt,.ai-bar,.cta,footer{padding-left:6rem;padding-right:6rem}
   .prod-grid{grid-template-columns:repeat(4,1fr)}
   .bundle{grid-column:span 4}
   .steps{grid-template-columns:repeat(4,1fr)}
   .tg{grid-template-columns:repeat(3,1fr)}
-  .ig{grid-template-columns:repeat(6,1fr)}
 }
 </style>
 </head>
 <body>
 
 <nav>
-  <div class="logo">NestworkCo</div>
-  <a href="https://nestworkco.etsy.com" class="nav-btn" target="_blank">Shop on Etsy →</a>
+  <div class="logo">Nestwork<span>Co</span></div>
+  <a href="#" class="nav-btn">Explore Store →</a>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-glow"></div>
-  <div class="badge">✦ AI-Powered · No API Key · Instant Download</div>
-  <h1>Stop doing admin.<br>Start <span class="gi">growing</span><br>your practice.</h1>
-  <p>CoachingOS gives independent professionals the AI-powered tools to get clients, deliver great work, and build a business that runs smoothly — without burning out.</p>
+  <div class="badge">✦ Enterprise-Grade Privacy · Local Execution · Lifetime License</div>
+  <h1>Own Your Workflow.<br><span class="gi">Compound Your Performance.</span></h1>
+  <p>NestworkCo builds advanced, private operating systems and interactive code engines for high-stakes independent professionals. Eliminate administrative drag and secure your quality of execution.</p>
   <div class="btns">
-    <a href="https://nestworkco.etsy.com" class="btn-p" target="_blank">Browse on Etsy →</a>
-    <a href="#problem" class="btn-g">See how it helps ↓</a>
+    <a href="#" class="btn-p">Go To Storefront →</a>
+    <a href="#systems" class="btn-g">View Architectures ↓</a>
   </div>
 </section>
 
-<!-- STATS -->
 <div class="stats f">
-  <div class="stat"><div class="stat-n">4</div><div class="stat-l">Connected<br>volumes</div></div>
-  <div class="stat"><div class="stat-n">0</div><div class="stat-l">API key<br>needed</div></div>
-  <div class="stat"><div class="stat-n">$0/mo</div><div class="stat-l">No monthly<br>fees ever</div></div>
-  <div class="stat"><div class="stat-n">2min</div><div class="stat-l">Input to<br>output</div></div>
+  <div class="stat"><div class="stat-n">100% Local</div><div class="stat-l">Zero Cloud Data Leakage</div></div>
+  <div class="stat"><div class="stat-n">No API Keys</div><div class="stat-l">Zero Technical Setup</div></div>
+  <div class="stat"><div class="stat-n">Buy Once</div><div class="stat-l">No Subscription Fees</div></div>
+  <div class="stat"><div class="stat-n">Role-Specific</div><div class="stat-l">Engineered for Performance</div></div>
 </div>
 
-<!-- PROBLEM -->
 <section class="sec" id="problem">
   <div class="f">
-    <div class="sec-tag">The real problem</div>
-    <h2>Most professionals are great at their craft.<br><span class="gi">Not the business around it.</span></h2>
-    <p>You didn't become a coach or consultant to spend hours writing cold emails, struggling with proposals, or staring at a blank LinkedIn screen. CoachingOS handles that part — so you can focus on the work that actually matters.</p>
+    <div class="sec-tag">The Core Framework</div>
+    <h2>Elite professionals excel at their craft.<br><span class="gi">We automate the operational drag around it.</span></h2>
+    <p>You didn't build your expertise to waste hours engineering generic AI prompts, manually organizing strategic data, or risking corporate compliance on external servers. Our local systems handle the mechanics so you can own the output.</p>
   </div>
   <div class="ps-wrap f">
     <div class="ps">
-      <h3>⚠️ Without CoachingOS</h3>
+      <h3>⚠️ The Status Quo Inefficiency</h3>
       <ul>
-        <li><span class="ic x">✕</span>Waiting weeks for referrals that may never come</li>
-        <li><span class="ic x">✕</span>Writing the same cold email from scratch every time</li>
-        <li><span class="ic x">✕</span>Losing deals because you froze on objections</li>
-        <li><span class="ic x">✕</span>Spending 3 hours on a proposal that should take 20 minutes</li>
-        <li><span class="ic x">✕</span>Clients drifting away after their first programme</li>
-        <li><span class="ic x">✕</span>LinkedIn posts that sound like every other coach</li>
+        <li><span class="ic x">✕</span>Relying on surface-level, generic AI prompts</li>
+        <li><span class="ic x">✕</span>Leaking high-value strategy due to corporate data restrictions</li>
+        <li><span class="ic x">✕</span>Wasting endless hours writing execution assets from scratch</li>
+        <li><span class="ic x">✕</span>Losing deal momentum to corporate silence and friction</li>
+        <li><span class="ic x">✕</span>Fragmented workspaces that fail to compound your insights</li>
       </ul>
     </div>
     <div class="ps">
-      <h3>✦ With CoachingOS</h3>
+      <h3>✦ The NestworkCo Ecosystem</h3>
       <ul>
-        <li><span class="ic ok">✓</span>A systematic way to find and attract the right clients</li>
-        <li><span class="ic ok">✓</span>Personalised outreach that sounds like you wrote it</li>
-        <li><span class="ic ok">✓</span>Confident, natural responses to any objection</li>
-        <li><span class="ic ok">✓</span>Proposals generated from your call notes in minutes</li>
-        <li><span class="ic ok">✓</span>Retention systems that turn clients into long-term relationships</li>
-        <li><span class="ic ok">✓</span>A brand voice that makes every touchpoint unmistakably yours</li>
+        <li><span class="ic ok">✓</span>Deeply contextual, role-specific code architectures</li>
+        <li><span class="ic ok">✓</span>100% secure, offline browser memory operation</li>
+        <li><span class="ic ok">✓</span>High-stakes collateral generated from simple raw data</li>
+        <li><span class="ic ok">✓</span>Calibrated action triggers designed to convert immediately</li>
+        <li><span class="ic ok">✓</span>Unified environments that lock down your career assets</li>
       </ul>
     </div>
   </div>
 </section>
 
-<!-- PRODUCTS -->
-<section class="sec-alt" id="products">
+<section class="sec-alt" id="systems">
   <div class="f">
-    <div class="sec-tag">The CoachingOS System</div>
-    <h2>Four volumes.<br><span class="gi">One complete system.</span></h2>
-    <p>Each volume tackles one phase of your business. Use them individually or together — each one builds on the last.</p>
+    <div class="sec-tag">Product Catalog</div>
+    <h2>Core Modules & Architectures.<br><span class="gi">Fully connected execution.</span></h2>
+    <p>Deploy standalone architectural modules or run them combined under a centralized performance hub. Tailored for elite execution.</p>
   </div>
   <div class="prod-grid f">
-    <div class="prod" style="--acc:linear-gradient(90deg,#c02878,#6a10c0)">
-      <div class="prod-vol">Vol.1 of 4</div>
-      <h3>Get Clients.</h3>
-      <p>Know exactly who your ideal client is, position your offer clearly, and run discovery calls with confidence.</p>
-      <div class="mod-row"><span class="mod">Client Profile Builder</span><span class="mod">Offer Positioning</span><span class="mod">Discovery Call Script</span></div>
+    <div class="prod" style="--acc:linear-gradient(90deg,#7c3aed,#2563eb)">
+      <div class="prod-vol">Module Architecture</div>
+      <h3>Pipeline & Deal Judgment</h3>
+      <p>Scan high-stakes deal flows, map buyer signals, and generate explicit action items to kill pipeline leakage early.</p>
+      <div class="mod-row"><span class="mod">Buying Signals</span><span class="mod">Health Scoring</span><span class="mod">Action Triggers</span></div>
       <div class="pf">
-        <div class="pamt" style="background:linear-gradient(90deg,#c02878,#6a10c0);-webkit-background-clip:text;-webkit-text-fill-color:transparent">$47</div>
-        <a href="https://www.etsy.com/listing/4508799492" class="pbtn" style="background:linear-gradient(135deg,#c02878,#6a10c0)" target="_blank">Get it →</a>
+        <div class="pamt">Interactive Framework</div>
+        <a href="#" class="pbtn">Explore →</a>
       </div>
     </div>
-    <div class="prod" style="--acc:linear-gradient(90deg,#6a10c0,#2a58d8)">
-      <div class="prod-vol">Vol.2 of 4</div>
-      <h3>Deliver & Delight.</h3>
-      <p>Turn prospects into paying clients with personalised outreach, objection handling, and proposals that win.</p>
-      <div class="mod-row"><span class="mod">Cold Outreach System</span><span class="mod">Objection Handler</span><span class="mod">Proposal Generator</span></div>
+    <div class="prod" style="--acc:linear-gradient(90deg,#2563eb,#06b6d4)">
+      <div class="prod-vol">Module Architecture</div>
+      <h3>Contextual Discovery & Mapping</h3>
+      <p>Extract direct buyer pain points. Build high-leverage question matrices calibrated to specific executive personas.</p>
+      <div class="mod-row"><span class="mod">Persona Filters</span><span class="mod">Deep Discovery</span><span class="mod">Value Mapping</span></div>
       <div class="pf">
-        <div class="pamt" style="background:linear-gradient(90deg,#6a10c0,#2a58d8);-webkit-background-clip:text;-webkit-text-fill-color:transparent">$57</div>
-        <a href="https://nestworkco.etsy.com" class="pbtn" style="background:linear-gradient(135deg,#6a10c0,#2a58d8)" target="_blank">Get it →</a>
+        <div class="pamt">Interactive Framework</div>
+        <a href="#" class="pbtn">Explore →</a>
       </div>
     </div>
-    <div class="prod" style="--acc:linear-gradient(90deg,#2a58d8,#0898d0)">
-      <div class="prod-vol">Vol.3 of 4</div>
-      <h3>Keep & Grow.</h3>
-      <p>Retain clients longer, deliver professional sessions consistently, and get referrals without the awkward ask.</p>
-      <div class="mod-row"><span class="mod">Client Retention System</span><span class="mod">Referral Engine</span><span class="mod">Session Delivery Kit</span></div>
+    <div class="prod" style="--acc:linear-gradient(90deg,#06b6d4,#10b981)">
+      <div class="prod-vol">Module Architecture</div>
+      <h3>Conversational Friction Mastery</h3>
+      <p>Calibrate closing asks, dismantle strict procurement objections, and craft high-impact reactivation collateral.</p>
+      <div class="mod-row"><span class="mod">Cultural Reframes</span><span class="mod">Objection Library</span><span class="mod">Velocity Emails</span></div>
       <div class="pf">
-        <div class="pamt" style="background:linear-gradient(90deg,#2a58d8,#0898d0);-webkit-background-clip:text;-webkit-text-fill-color:transparent">$67</div>
-        <a href="https://nestworkco.etsy.com" class="pbtn" style="background:linear-gradient(135deg,#2a58d8,#0898d0)" target="_blank">Get it →</a>
+        <div class="pamt">Interactive Framework</div>
+        <a href="#" class="pbtn">Explore →</a>
       </div>
     </div>
-    <div class="prod" style="--acc:linear-gradient(90deg,#d85020,#c02878)">
-      <div class="prod-vol">Vol.4 of 4</div>
-      <h3>Brand Voice.</h3>
-      <p>Set your brand identity once. Every prompt, proposal, and LinkedIn post will sound unmistakably like you.</p>
-      <div class="mod-row"><span class="mod">Brand Setup</span><span class="mod">Voice Generator</span><span class="mod">30 LinkedIn Prompts</span></div>
+    <div class="prod" style="--acc:linear-gradient(90deg,#f59e0b,#7c3aed)">
+      <div class="prod-vol">Module Architecture</div>
+      <h3>Performance & Skill Growth</h3>
+      <p>Audit past outcomes, crystallize personal playbooks, and isolate winning denominators to scale career value.</p>
+      <div class="mod-row"><span class="mod">Win/Loss Audits</span><span class="mod">Playbook Vault</span><span class="mod">Skill Matrices</span></div>
       <div class="pf">
-        <div class="pamt" style="background:linear-gradient(90deg,#d85020,#c02878);-webkit-background-clip:text;-webkit-text-fill-color:transparent">$47</div>
-        <a href="https://nestworkco.etsy.com" class="pbtn" style="background:linear-gradient(135deg,#d85020,#c02878)" target="_blank">Get it →</a>
+        <div class="pamt">Interactive Framework</div>
+        <a href="#" class="pbtn">Explore →</a>
       </div>
     </div>
     <div class="prod bundle">
-      <div class="prod-vol">Full Bundle · Best Value · Save $51</div>
-      <h3>The Complete CoachingOS System.</h3>
-      <p>All 4 volumes in one purchase. $218 of tools for $167 — and each volume connects seamlessly to the next.</p>
-      <div class="mod-row"><span class="mod">Vol.1 Get Clients</span><span class="mod">Vol.2 Deliver & Delight</span><span class="mod">Vol.3 Keep & Grow</span><span class="mod">Vol.4 Brand Voice</span><span class="mod" style="color:#c8940a;border-color:rgba(200,148,10,0.25)">Save $51</span></div>
+      <div class="prod-vol">Complete Enterprise Suite · Best Value Allocation</div>
+      <h3>The Full Operational Command Center.</h3>
+      <p>Unlocks the ultimate synergy: Seamlessly connect all individual interactive HTML engines under a permanent Central Performance Workspace.</p>
+      <div class="mod-row"><span class="mod">All Local HTML Engines</span><span class="mod">Central Executive Dashboard</span><span class="mod">Cross-Volume Data Synergy</span><span class="mod" style="color:#7c3aed;border-color:rgba(124,58,237,0.25)">Complete License</span></div>
       <div class="pf">
         <div>
-          <div class="pamt" style="background:linear-gradient(90deg,#c02878,#0898d0);-webkit-background-clip:text;-webkit-text-fill-color:transparent">$167</div>
-          <div style="font-size:0.68rem;color:#7a72a0;text-decoration:line-through">$218 separately</div>
+          <div class="pamt">Full Bundle Ecosystem</div>
+          <div style="font-size:0.72rem;color:#686380">Optimized Deployment Pricing</div>
         </div>
-        <a href="https://nestworkco.etsy.com" class="pbtn" style="background:linear-gradient(135deg,#c02878,#0898d0);padding:0.48rem 1.1rem" target="_blank">Get Bundle →</a>
+        <a href="#" class="pbtn" style="padding:0.6rem 1.4rem">View Suite Packages →</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- HOW -->
 <section class="sec" id="how">
   <div class="f">
-    <div class="sec-tag">How it works</div>
-    <h2>Open. Fill in.<br><span class="gi">Get results.</span></h2>
-    <p>No technical setup. No subscriptions. No API keys. Just open the file and start.</p>
+    <div class="sec-tag">The Local Philosophy</div>
+    <h2>How It Executes.<br><span class="gi">Zero Friction. Sovereign Control.</span></h2>
+    <p>No account logins. No server-side storage. Your data never leaves your computer terminal.</p>
   </div>
   <div class="steps f">
-    <div class="step"><div class="sn">1</div><div><h3>Download</h3><p>One HTML file per volume. Instant delivery after purchase on Etsy.</p></div></div>
-    <div class="step"><div class="sn">2</div><div><h3>Open in browser</h3><p>Chrome, Safari or Firefox. Desktop or mobile. No installation.</p></div></div>
-    <div class="step"><div class="sn">3</div><div><h3>Fill in your details</h3><p>Enter your niche, prospect info or session notes. The tool builds a personalised AI prompt.</p></div></div>
-    <div class="step"><div class="sn">4</div><div><h3>Paste & get output</h3><p>Paste into Claude.ai or ChatGPT — free plan works. Get professional output in seconds.</p></div></div>
+    <div class="step"><div class="sn">1</div><div><h3>Acquire & Download</h3><p>Receive your individual interactive HTML files and centralized workspace links instantly upon authentication.</p></div></div>
+    <div class="step"><div class="sn">2</div><div><h3>Boot Offline</h3><p>Open directly inside Chrome, Safari, or Brave. Operates locally in browser memory with zero external cloud dependencies.</p></div></div>
+    <div class="step"><div class="sn">3</div><div><h3>Inject Context</h3><p>Input raw field notes or situational parameters. The code engines compile highly structured, context-dense prompts.</p></div></div>
+    <div class="step"><div class="sn">4</div><div><h3>Paste & Execute</h3><p>Deploy into Claude or ChatGPT (Free or Plus). Receive enterprise-grade strategic output in seconds.</p></div></div>
   </div>
 </section>
 
-<!-- AI BAR -->
 <div class="ai-bar f">
-  <div class="ai-lbl">Works with any AI assistant — free plans included</div>
+  <div class="ai-lbl">Universal System Compatibility — Data Protected via LocalStorage</div>
   <div class="ai-row">
-    <div class="ap rec">Claude.ai ★ Recommended</div>
+    <div class="ap rec">Claude.ai Optimized</div>
     <div class="ap">ChatGPT</div>
-    <div class="ap">Gemini</div>
-    <div class="ap">Copilot</div>
+    <div class="ap">Gemini Enterprise</div>
+    <div class="ap">Local LLMs</div>
   </div>
 </div>
 
-<!-- TESTIMONIALS -->
 <section class="sec-alt">
   <div class="f">
-    <div class="sec-tag">What users say</div>
-    <h2>Real results from <span class="gi">real professionals</span></h2>
+    <div class="sec-tag">Proven Leverage</div>
+    <h2>Built for high-stakes <span class="gi">independent execution</span></h2>
   </div>
   <div class="tg f">
-    <div class="t"><div class="stars">★★★★★</div><div class="tq">I used the Client Profile Builder and finally stopped saying "I help everyone." Within an hour I had a clear niche and a positioning statement I actually felt confident about.</div><div class="tw"><div class="av" style="background:linear-gradient(135deg,#c02878,#6a10c0)">S</div><div><div class="tn">Sarah M.</div><div class="tr">Life Coach · United Kingdom</div></div></div></div>
-    <div class="t"><div class="stars">★★★★★</div><div class="tq">The Proposal Generator saved me 3 hours on my last proposal. I pasted my call notes, got a full draft that sounded exactly like how I speak. Client signed the same day.</div><div class="tw"><div class="av" style="background:linear-gradient(135deg,#6a10c0,#2a58d8)">J</div><div><div class="tn">James K.</div><div class="tr">Business Consultant · Netherlands</div></div></div></div>
-    <div class="t"><div class="stars">★★★★★</div><div class="tq">I was losing clients after the first programme and didn't know why. The Retention System showed me how to run proper check-ins. Two clients just renewed for 6 more months.</div><div class="tw"><div class="av" style="background:linear-gradient(135deg,#2a58d8,#0898d0)">A</div><div><div class="tn">Anna L.</div><div class="tr">Executive Coach · Germany</div></div></div></div>
-    <div class="t"><div class="stars">★★★★★</div><div class="tq">The Objection Handler is genuinely brilliant. I used to freeze when clients said "I need to think about it." Now I have 3 natural responses ready. Closed 2 deals last week I would have lost.</div><div class="tw"><div class="av" style="background:linear-gradient(135deg,#d85020,#c02878)">M</div><div><div class="tn">Marcus T.</div><div class="tr">HR Consultant · Denmark</div></div></div></div>
-    <div class="t"><div class="stars">★★★★★</div><div class="tq">Brand Voice changed how I show up on LinkedIn. I used to stare at a blank screen for an hour. Now I generate a post in 5 minutes that actually sounds like me — not like a robot.</div><div class="tw"><div class="av" style="background:linear-gradient(135deg,#0898d0,#2a58d8)">P</div><div><div class="tn">Paula R.</div><div class="tr">Career Coach · Ireland</div></div></div></div>
-    <div class="t"><div class="stars">★★★★★</div><div class="tq">I bought the full bundle and used all 4 volumes in the first week. It's the most practical AI tool I've bought. Everything connects — output from Vol.1 feeds directly into Vol.2.</div><div class="tw"><div class="av" style="background:linear-gradient(135deg,#c02878,#0898d0)">D</div><div><div class="tn">David W.</div><div class="tr">L&D Consultant · Belgium</div></div></div></div>
+    <div class="t"><div class="stars">★★★★★</div><div class="tq">By applying the tactical qualification matrices, I disqualified three dead-end corporate accounts in week one, protecting my energy to lock down a significant high-value cycle.</div><div class="tw"><div class="av" style="background:#110f1a">M</div><div><div class="tn">Marcus T.</div><div class="tr">Enterprise Account Executive · Denmark</div></div></div></div>
+    <div class="t"><div class="stars">★★★★★</div><div class="tq">The discovery tracking system completely overhauled my consulting intake. It isolated direct client pain metrics within 30 minutes, resulting in an immediate contract signature.</div><div class="tw"><div class="av" style="background:#7c3aed">J</div><div><div class="tn">James K.</div><div class="tr">B2B Strategy Consultant · Netherlands</div></div></div></div>
+    <div class="t"><div class="stars">★★★★★</div><div class="tq">The localized friction logs allow me to pitch different regional buying hubs without losing consensus. It's an indispensable asset that remains entirely under my personal ownership.</div><div class="tw"><div class="av" style="background:#2563eb">A</div><div><div class="tn">Anna L.</div><div class="tr">Corporate Advisor · Germany</div></div></div></div>
   </div>
 </section>
 
-<!-- INDUSTRIES -->
-<section class="sec" id="industries">
+<section class="sec" style="text-align:center" id="pricing">
   <div class="f">
-    <div class="sec-tag">Who it's for</div>
-    <h2>Works across <span class="gi">industries</span></h2>
-    <p>The CoachingOS framework applies to any profession where you sell 1:1 services or expertise.</p>
-  </div>
-  <div class="ig f">
-    <div class="ic"><div class="ic-i">🎯</div><h3>Life & Executive Coaches</h3><p>Client profiles, discovery calls, retention systems.</p></div>
-    <div class="ic"><div class="ic-i">🏢</div><h3>Business Consultants</h3><p>SME outreach, proposals, retainer conversion.</p></div>
-    <div class="ic"><div class="ic-i">🏠</div><h3>Real Estate Agents</h3><p>Listing presentations, buyer qualification, follow-ups.</p></div>
-    <div class="ic"><div class="ic-i">💼</div><h3>HR & L&D Consultants</h3><p>Corporate outreach, proposals, brand positioning.</p></div>
-    <div class="ic"><div class="ic-i">📈</div><h3>Marketing Consultants</h3><p>Cold outreach, objection handling, brand voice.</p></div>
-    <div class="ic"><div class="ic-i">🎓</div><h3>Career Coaches</h3><p>Niche positioning, pricing objections, session delivery.</p></div>
-  </div>
-</section>
-
-<!-- PRICING -->
-<section class="sec-alt" style="text-align:center" id="pricing">
-  <div class="f">
-    <div class="sec-tag">Pricing</div>
-    <h2>One-time.<br><span class="gi">No subscriptions.</span></h2>
-    <p style="margin:0 auto">Buy once, use forever. No monthly fees, no renewal, no account needed.</p>
-  </div>
-  <div class="pg f">
-    <div class="pc"><div class="pv">Starter</div><div class="pn">Client Profile</div><div class="pa" style="background:linear-gradient(90deg,#c02878,#6a10c0);-webkit-background-clip:text;-webkit-text-fill-color:transparent">$0.99</div></div>
-    <div class="pc"><div class="pv">Vol.1</div><div class="pn">Get Clients</div><div class="pa" style="background:linear-gradient(90deg,#c02878,#6a10c0);-webkit-background-clip:text;-webkit-text-fill-color:transparent">$47</div></div>
-    <div class="pc"><div class="pv">Vol.2</div><div class="pn">Deliver</div><div class="pa" style="background:linear-gradient(90deg,#6a10c0,#2a58d8);-webkit-background-clip:text;-webkit-text-fill-color:transparent">$57</div></div>
-    <div class="pc"><div class="pv">Vol.3</div><div class="pn">Keep & Grow</div><div class="pa" style="background:linear-gradient(90deg,#2a58d8,#0898d0);-webkit-background-clip:text;-webkit-text-fill-color:transparent">$67</div></div>
-    <div class="pc"><div class="pv">Vol.4</div><div class="pn">Brand Voice</div><div class="pa" style="background:linear-gradient(90deg,#d85020,#c02878);-webkit-background-clip:text;-webkit-text-fill-color:transparent">$47</div></div>
-    <div class="pc best"><div class="pv">Bundle · All 4 Volumes</div><div class="pn">Complete CoachingOS System</div><div class="pa" style="background:linear-gradient(90deg,#c02878,#0898d0);-webkit-background-clip:text;-webkit-text-fill-color:transparent">$167</div><div class="psave">Save $51 vs buying separately ✦</div></div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="cta">
-  <div class="f">
-    <h2>Try it for <span class="gi">$0.99.</span><br>Build your professional OS.</h2>
-    <p>Start with the Starter — 5 AI prompts that help you define exactly who you serve. Experience the quality before committing to the full system.</p>
-    <div class="btns">
-      <a href="https://nestworkco.etsy.com" class="btn-p" target="_blank">Shop on Etsy →</a>
+    <div class="sec-tag">The Distribution Philosophy</div>
+    <h2>One-Time Investment.<br><span class="gi">Infinite Leverage.</span></h2>
+    <p style="margin:0 auto">We do not believe in charging professionals a monthly toll to access their own workflow assets.</p>
+    
+    <div class="value-block">
+      <h3>The NestworkCo Licensing Model:</h3>
+      <div class="v-row">
+        <div class="v-cell">
+          <h4>✓ Single Payment License</h4>
+          <p>Pay once, own the local code assets permanently. No hidden renewals.</p>
+        </div>
+        <div class="v-cell">
+          <h4>✓ Sovereign Privacy</h4>
+          <p>All client metrics remain strictly locked in your local browser storage.</p>
+        </div>
+        <div class="v-cell">
+          <h4>✓ Zero API Overhead</h4>
+          <p>No complex technical integrations or personal API costs required.</p>
+        </div>
+        <div class="v-cell">
+          <h4>✓ Fluid Adaptability</h4>
+          <p>As AI foundational models evolve, your code engines adapt seamlessly.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
+<section class="cta">
+  <div class="f">
+    <h2>Secure Your Performance Stack.</h2>
+    <p>Enter the storefront to browse our active deployment frameworks and experience role-specific operating systems built for high-stakes conversion.</p>
+    <div class="btns">
+      <a href="#" class="btn-p">Enter NestworkCo Storefront →</a>
+    </div>
+  </div>
+</section>
+
 <footer>
   <div class="fl">NestworkCo</div>
   <div class="flinks">
-    <a href="https://nestworkco.etsy.com" target="_blank">Etsy Shop</a>
-    <a href="https://pinterest.com/huypq1511nt" target="_blank">Pinterest</a>
+    <a href="#" target="_blank">Storefront</a>
+    <a href="https://nestworkco.github.io/nestworkco/" target="_blank">Portfolio Home</a>
   </div>
-  <div class="fc">© 2026 NestworkCo</div>
+  <div class="fc">© 2026 NestworkCo. Localized Operational Frameworks.</div>
 </footer>
 
 <script>
 const io=new IntersectionObserver(entries=>{
-  entries.forEach((e,i)=>{if(e.isIntersecting)setTimeout(()=>e.target.classList.add('in'),i*55)});
-},{threshold:0.06});
+  entries.forEach((e,i)=>{if(e.isIntersecting)setTimeout(()=>e.target.classList.add('in'),i*40)});
+},{threshold:0.04});
 document.querySelectorAll('.f').forEach(el=>io.observe(el));
 </script>
 </body>
